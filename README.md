@@ -36,3 +36,29 @@ this will run the script
 
 ## Note
 make sure you keep the image file and the mp4 file in the same folder as "lanes.py" or your image and/or video won't load. 
+<br>
+<br>
+<br>
+# Using other photos/Video
+In "lanes.py" you will find.
+<br>
+<br>
+def region_of_interest(image):<br>
+    height = image.shape[0]<br>
+    polygons = np.array([<br>
+    [(200, height ), (1100, height), (550, 250)]
+    ])<br>
+    mask = np.zeros_like(image)<br>
+    cv2.fillPoly(mask, polygons, 255)<br>
+    masked_image = cv2.bitwise_and(image, mask)<br>
+    return masked_image<br>
+<br>
+this sections defines the what part of the image or video to look for lane lines. Let me first explain the code is looking for a sharp change in brightness, so on a black road the white lines will be read as a sharp change in brightness. but as you can tell there are multiple regions in the photo that have sharp changes in the brightness(the sky) so we want to restrict (mask) what exactly the image is being looked at for this project we are using a triangle as the boundary for the mask. If you want to use this code for a different photo or video file find;
+<br>
+<br>
+ polygons = np.array([<br>
+    [(200, height ), (1100, height), (550, 250)]<br>
+    ])
+<br>
+<br>
+edit the integers next to height and the (550, 250) this will change the position of the triangle. And add another ordered pair to make the polygon into a circle.
