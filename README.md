@@ -61,4 +61,4 @@ this sections defines the what part of the image or video to look for lane lines
     ])
 <br>
 <br>
-edit the integers next to height and the (550, 250) this will change the position of the triangle. And add another ordered pair to make the polygon into a circle.
+edit the integers next to height and the (550, 250) this will change the position of the "triangle". And add another ordered pair in side the brackets to make the polygon into a square.
