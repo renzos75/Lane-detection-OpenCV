@@ -9,7 +9,7 @@ This is a python Program so you will not be able to run this project without fir
 <br>
 <br>
 # Installation
-first, in order to install python you must firt download <a href="https://www.anaconda.com/distribution/">Anaconda</a>, this will install the most recent version of python (make sure to select the correct OS) once installed open Anaconda Prompt and Run;
+first, in order to install python you must firt download <a href="https://www.anaconda.com/distribution/">Anaconda</a>, this will install the most recent version of python (make sure to select the correct OS) once installed open "Anaconda Prompt" and Run;
 ##### python -- version
 
 This should display the version of python you installed with anaconda.
